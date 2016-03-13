@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('features', 'FeaturesController@index')->name('index');
+Route::get('services', 'ServicesController@index')->name('index');
+Route::get('contact', 'ContactController@index')->name('index');
 
 /*
 |--------------------------------------------------------------------------

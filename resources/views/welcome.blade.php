@@ -1,45 +1,190 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+<html lang="en"> 
+<head>
+    <title>Time Control | Time tracking and workforce management</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+    <link rel="shortcut icon" href="{{ asset('favicon.ico')}}">
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">    
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/header-v6.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/footer.css') }}" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    
+    <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/theme-dark.css') }}">
+</head>
+<body>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+<div class="wrapper">
+ <div class="header-v6 header-classic-dark header-sticky">
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+                    <!-- Navbar Brand -->
+                    <div class="navbar-brand">
+                        <a href="{{url('')}}">
+                            <img class="default-logo" src="" alt="Time control">
+                        </a>
+                    </div>
+                    <!-- ENd Navbar Brand -->
+               </div>
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="active"><a href="{{url('')}}">Home</a></li>
+                            <li><a href="{{url('features')}}">Features</a></li>
+                            <li><a href="{{url('services')}}">Solutions</a></li>
+                            <li><a href="{{url('download')}}">Download</a></li>                            
+                            <li><a href="{{url('demo')}}">Demo</a></li>                          
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Support</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Forum</a></li>
+                        </ul>
+                            </li>
+                            <li><a href="{{ url('contact') }}">Contact</a></li>                            
+
+                      </ul>
+                    </div>
+                </div><!--/navbar-collapse-->
             </div>
         </div>
-    </body>
+        <!-- End Navbar -->
+    </div>
+
+ @yield('breakcrumbs')
+
+        
+
+     @yield('content')
+
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                            <div class="headline"><h2>Time control</h2></div>
+                            <div class="clearfix">&nbsp;</div>
+                        <p>The best open source time tracking and workforce management system.</p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>General</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">Features</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Services</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Demo</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Support</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                        </div>
+                    </div><!--/col-md-3-->
+                    <!-- End Latest -->
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
+                    <!-- Address -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="headline"><h2>Newsletter</h2></div>
+                        <p><strong>Subscribe</strong> to our newsletter and stay up to date with the latest news and deals!</p><br>
+
+                        <!-- Form Group -->
+                        <div class="input-group margin-bottom-50">
+                            <input class="form-control" type="email" placeholder="Enter email">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn-u input-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            2016 &copy; iDevelopment All Rights Reserved.
+                           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="#" class="tooltips" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/idevelopment/timecontrol" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Github">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+
+<script type="text/javascript" src="{{ asset('js/jquery/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery/jquery-migrate.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap/js/bootstrap.min.js')}}"></script>
+
+</body>
+
 </html>
