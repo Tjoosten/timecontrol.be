@@ -16,45 +16,58 @@
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/header-v6.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/header-default.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sky-forms-pro/skyforms/css/sky-forms.css')}}">
     <link rel="stylesheet" href="{{ asset('css/sky-forms-pro/skyforms/custom/custom-sky-forms.css')}}">    
     
     <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme-dark.css') }}">
 </head>
 <body>
 
 <div class="wrapper">
- <div class="header-v6 header-classic-dark">
-        <!-- Navbar -->
-        <div class="navbar mega-menu" role="navigation">
+    <div class="header">
+        <div class="container">
+<div class="clearfix">&nbsp;</div>
+<div class="clearfix">&nbsp;</div>
+            <a class="logo" href="{{ url('') }}">
+                <img src="assets/img/logo1-default.png" alt="Time control">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul class="loginbar pull-right">
+                    <li class="hoverSelector">
+                        <i class="fa fa-globe"></i>
+                        <a>Languages</a>
+                        <ul class="languages hoverSelectorBlock">
+                            <li><a href="#">Dutch</a></li>
+                            <li class="active"><a href="#">English <i class="fa fa-check"></i></a></li>
+                            <li><a href="#">French</a></li>
+                        </ul>
+                    </li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="page_faq.html">Help</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="page_login.html">Login</a></li>
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="menu-container">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Navbar Brand -->
-                    <div class="navbar-brand">
-                        <a href="{{url('')}}">
-                            <img class="default-logo" src="" alt="Time control">
-                        </a>
-                    </div>
-                    <!-- ENd Navbar Brand -->
-               </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-responsive-collapse">
-                    <div class="menu-container">
-                        <ul class="nav navbar-nav">
-                            <!-- Home -->
+                <ul class="nav navbar-nav">
                             <li class="active"><a href="{{url('')}}">{{ Lang::get('header.home')}}</a></li>
                             <li><a href="{{url('features')}}">{{ Lang::get('header.features')}}</a></li>
                             <li><a href="{{url('services')}}">{{ Lang::get('header.services')}}</a></li>
@@ -75,8 +88,6 @@
                 </div><!--/navbar-collapse-->
             </div>
         </div>
-        <!-- End Navbar -->
-    </div>
 
  @yield('breakcrumbs')
 
