@@ -9,7 +9,7 @@
                     <p>This release has some great improvements and new features...</p>
                 </div>
                 <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-cloud-download"></i> Download Now</a>
+                    <a href="https://github.com/idevelopment/timecontrol.be/archive/master.zip" class="btn btn-primary btn-lg"><i class="fa fa-cloud-download"></i> Download Now</a>
                 </div>
             </div>
         </div>
