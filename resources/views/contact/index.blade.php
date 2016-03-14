@@ -16,21 +16,39 @@
  <div class="container content">
         <div class="row margin-bottom-30">
             <div class="col-md-9 mb-margin-bottom-30">
-                <div class="headline"><h2>Contact Form</h2></div>
-                <p>The form below should <strong>ONLY</strong> be used for commercial enquiries for development or consultancy projects.</p><br />
+             <p>The form below should <strong>ONLY</strong> be used for commercial enquiries for development or consultancy projects.</p><br />
 
                 <form action="{{url('contact')}}" method="post" id="sky-form" class="sky-form contact-style">
                     <fieldset class="no-padding">
-                        <label>Name <span class="color-red">*</span></label>
+
+                        <label for="company">{{Lang::get('contact.company')}}</label>
                         <div class="row sky-space-20">
                             <div class="col-md-7 col-md-offset-0">
                                 <div>
-                                    <input type="text" name="name" id="name" class="form-control">
+                                    <input type="text" name="company" id="company" class="form-control">
                                 </div>
                             </div>
                         </div>
 
-                        <label>Email <span class="color-red">*</span></label>
+                        <label for="first_name">{{Lang::get('contact.first_name')}} <span class="color-red">*</span></label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="first_name" id="first_name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label for="last_name">{{Lang::get('contact.last_name')}} <span class="color-red">*</span></label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="last_name" id="last_name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>{{Lang::get('contact.email')}} <span class="color-red">*</span></label>
                         <div class="row sky-space-20">
                             <div class="col-md-7 col-md-offset-0">
                                 <div>
@@ -39,17 +57,36 @@
                             </div>
                         </div>
 
-                        <label>Message <span class="color-red">*</span></label>
+
+                        <label>{{Lang::get('contact.phone')}}</label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="email" id="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <label>{{Lang::get('contact.mobile')}}</label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="email" id="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>                        
+                        <label>{{Lang::get('contact.message')}} <span class="color-red">*</span></label>
                         <div class="row sky-space-20">
                             <div class="col-md-11 col-md-offset-0">
                                 <div>
-                                    <textarea rows="8" name="message" id="message" class="form-control"></textarea>
+                                    <textarea rows="5" name="message" id="message" class="form-control"></textarea>
                                 </div>
                             </div>
                         </div>
                 <div class="clearfix">&nbsp;</div>
 
-                        <p><button type="submit" class="btn-u">Send Message</button></p>
+                        <p><button type="submit" class="btn-u">{{Lang::get('contact.submit')}}</button></p>
                     </fieldset>
                </form>
             </div><!--/col-md-9-->
