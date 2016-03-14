@@ -10,6 +10,8 @@ return [
     | The following language lines are used for various the navigation menu
     |
     */
+     
+    'description' => 'The easiest way for your departments and teams to track how much time they spend on tasks, and get real time results.',
 
     'home' => 'Home',
     'features' => 'Features',
