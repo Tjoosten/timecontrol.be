@@ -85,9 +85,6 @@ a.read-more:hover {
 	}
 }
 
-/* Headers v1
-------------------------------------*/
-/*Fix hover color for the little icons v1.9*/
 .header-v1 .topbar-v1 .top-v1-data li a:hover i {
 	color: #4e87c9;
 }
