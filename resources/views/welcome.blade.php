@@ -49,9 +49,9 @@
                         </ul>
                     </li>
                     <li class="topbar-devider"></li>
-                    <li><a href="page_faq.html">Help</a></li>
+                    <li><a href="{{ url('support') }}">Help</a></li>
                     <li class="topbar-devider"></li>
-                    <li><a href="page_login.html">Login</a></li>
+                    <li><a href="{{ url('auth/login') }}">Login</a></li>
                 </ul>
             </div>
             <!-- End Topbar -->
