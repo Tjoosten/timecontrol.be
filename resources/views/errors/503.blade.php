@@ -37,21 +37,9 @@
         <div class="col-md-12 coming-soon">
             <h1>{{Lang::get('offline.title')}}</h1>
             <p>{{Lang::get('offline.soon')}}</p><br>
-            <form>
-                <div class="input-group col-md-4 col-md-offset-4">
-                    <input type="text" class="form-control" placeholder="Your Email">
-                    <span class="input-group-btn">
-                        <button class="btn-u" type="button">Subscribe</button>
-                    </span>                        
-                </div><!-- /input-group -->                    
-            </form>
         </div>
     </div>
 
-    <!-- Coming Soon Plugn -->
-    <div class="coming-soon-plugin">
-        <div id="defaultCountdown"></div>
-    </div>
 </div>
 
 <div class="container sticky-footer">
