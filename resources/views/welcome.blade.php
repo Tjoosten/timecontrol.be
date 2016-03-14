@@ -19,6 +19,8 @@
     <link href="{{ asset('css/header-v6.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sky-forms-pro/skyforms/css/sky-forms.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/sky-forms-pro/skyforms/custom/custom-sky-forms.css')}}">    
     
     <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
     <link rel="stylesheet" href="{{ asset('css/theme-dark.css') }}">
@@ -26,7 +28,7 @@
 <body>
 
 <div class="wrapper">
- <div class="header-v6 header-classic-dark header-sticky">
+ <div class="header-v6 header-classic-dark">
         <!-- Navbar -->
         <div class="navbar mega-menu" role="navigation">
             <div class="container">
@@ -53,20 +55,20 @@
                     <div class="menu-container">
                         <ul class="nav navbar-nav">
                             <!-- Home -->
-                            <li class="active"><a href="{{url('')}}">Home</a></li>
-                            <li><a href="{{url('features')}}">Features</a></li>
-                            <li><a href="{{url('services')}}">Solutions</a></li>
-                            <li><a href="{{url('download')}}">Download</a></li>                            
-                            <li><a href="{{url('demo')}}">Demo</a></li>                          
+                            <li class="active"><a href="{{url('')}}">{{ Lang::get('header.home')}}</a></li>
+                            <li><a href="{{url('features')}}">{{ Lang::get('header.features')}}</a></li>
+                            <li><a href="{{url('services')}}">{{ Lang::get('header.services')}}</a></li>
+                            <li><a href="{{url('download')}}">{{ Lang::get('header.download')}}</a></li>                            
+                            <li><a href="{{url('demo')}}">{{ Lang::get('header.demo')}}</a></li>                          
                             <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Support</a>
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">{{ Lang::get('header.support')}}</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Chat</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">{{ Lang::get('header.chat')}}</a></li>
+                            <li><a href="#">{{ Lang::get('header.docs')}}</a></li>
+                            <li><a href="#">{{ Lang::get('header.forum')}}</a></li>
                         </ul>
                             </li>
-                            <li><a href="{{ url('contact') }}">Contact</a></li>                            
+                            <li><a href="{{ url('contact') }}">{{ Lang::get('header.contact')}}</a></li>                            
 
                       </ul>
                     </div>
