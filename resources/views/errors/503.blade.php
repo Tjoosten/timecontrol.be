@@ -8,7 +8,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" CONTENT="index, follow" />    
+    <meta name="robots" content="index, follow" />    
     <meta name="description" content="{{Lang::get('header.description')}}">
     <meta name="keywords" content="{{Lang::get('header.keywords')}}">    
     <meta name="author" content="">
